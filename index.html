@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html leng="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Slider - Bootstrap</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="">
+		<style>
+			img{
+				width: 100%;
+				height:600px;
+				object-fit: cover;
+				object-position: center; 
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<!-- Container de Slider -->
+		<nav id="page" class="carousel slide" data-ride="carousel">
+			
+			<!-- Indicadores -->
+			<ol class="carousel-indicators">
+				<li data-target="#page" data-slide-to="0" class="active"></li>
+				<li data-target="#page" data-slide-to="1"></li>
+				<li data-target="#page" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Imagens do carousel -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/img01.jpg" alt="Gato">
+					<!-- Legenda da imagem -->
+					<div class="carousel-caption">
+						<h1 class="text-uppercase">Gato</h1>
+						<p>Imagem de um Gato deitado em cima de uma mesa.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/img02.jpg" alt="Paisagem">
+					<!-- Legenda da imagem -->
+					<div class="carousel-caption">
+						<h1 class="text-uppercase"> Paisagem</h1>
+						<p>Imagem das pedras em algum lugar do mundo.</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/img03.jpg" alt="Estrada">
+					<!-- Legenda da imagem -->
+					<div class="carousel-caption">
+						<h1 class="text-uppercase"> Estrada</h1>
+						<p>Imagem de uma estrada em algum lugar do mundo.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Previus e Next -->
+			<a href="#page" class="carousel-control-prev" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+
+			<a href="#page" class="carousel-control-next" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</nav>
+
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</html>
